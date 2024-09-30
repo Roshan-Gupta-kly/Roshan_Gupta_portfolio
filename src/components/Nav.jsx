@@ -1,7 +1,7 @@
 import { logo } from "../assets/images";
 import { navLinks } from "../constants";
-import { menu} from "../assets/images/index";
-import { xMark } from "../assets/images/index";
+import { menu } from "../assets/images/index";
+import { cross } from "../assets/icons/index";
 import { useState } from "react";
 
 const Nav = () => {
@@ -38,7 +38,7 @@ const Nav = () => {
           onClick={handleMenuToggle}
         >
           <img
-            src={isMenuOpen ? xMark : menu}
+            src={isMenuOpen ? cross : menu}
             alt={isMenuOpen ? "close_menu" : "hamburger_menu"}
             width={35}
             height={35}
@@ -55,7 +55,10 @@ const Nav = () => {
           }`}
         >
           {navLinks.map((item, index) => (
-            <li key={item.label} className="flex justify-between items-center gap-[7px]">
+            <li
+              key={item.label}
+              className="flex justify-between items-center gap-[7px]"
+            >
               <a
                 href={item.href}
                 className="leading-normal p-1 text-sm text-slate-500 hover:text-slate-300"
