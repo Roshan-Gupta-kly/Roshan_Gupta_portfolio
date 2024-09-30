@@ -73,7 +73,7 @@ const AboutMe = ({ onClose }) => {
               <a
                 href="https://www.linkedin.com/in/roshan-gupta-2817522a5/"
                 target="_blank"
-                className="transform translate-y-10 rotate-[30deg] origin-bottom hover:rotate-0 transition-all"
+                className="transform translate-y-4 rotate-[30deg] origin-bottom hover:rotate-0 transition-all"
               >
                 <BsLinkedin className="lg:text-4xl md:text-3xl text-3xl hover:text-blue-400" />
               </a>
@@ -94,14 +94,14 @@ const AboutMe = ({ onClose }) => {
               <a
                 href="https://www.twitter.com"
                 target="_blank"
-                className="transform translate-x-2 rotate-[15deg] origin-bottom hover:rotate-0"
+                className="transform translate-x-1 rotate-[15deg] origin-bottom hover:rotate-0"
               >
                 <BsTwitterX className="lg:text-4xl md:text-3xl text-3xl hover:text-black" />
               </a>
               <a
                 href="mailto:lucysigma72@gmail.com"
                 target="_blank"
-                className="transform translate-y-10  rotate-[30deg] origin-bottom hover:rotate-0"
+                className="transform translate-y-4  rotate-[30deg] origin-bottom hover:rotate-0"
               >
                 <GiMailbox className="lg:text-4xl md:text-3xl text-3xl hover:text-red-400" />
               </a>

@@ -30,7 +30,7 @@ const App = () => {
         </SimpleBar>
 
         {/* Chat Icon at the bottom-right corner */}
-        <ChatIcon />
+        {/* <ChatIcon /> */}
       </main>
     </>
   );
