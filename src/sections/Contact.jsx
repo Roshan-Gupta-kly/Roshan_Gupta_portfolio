@@ -59,7 +59,7 @@ const Contact = () => {
               transition={{ duration: 1.6 }}
               className="flex items-center gap-6">
                 <a
-                  href="https://www.linkedin.com/in/lucysigma72/"
+                  href="https://www.linkedin.com/in/roshan-gupta-2817522a5/"
                   target="_blank"
                 >
                   <BsLinkedin className="text-3xl text-white" />
