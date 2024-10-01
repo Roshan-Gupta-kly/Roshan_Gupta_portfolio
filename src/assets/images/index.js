@@ -6,6 +6,10 @@ import menu from "./menu.png"
 import xMark from "./xMark.png"
 import yugal from "./yugal.jpeg"
 import pranjal from "./pranjal.jpeg"
+import frontend from "./frontend.png"
+import backend from "./backend.jpg"
+import fullStack from "./fullStack.jpg"
+import webDesigner from "./webDesigner.jpg"
 
 export {
     downloadImg,
@@ -15,5 +19,9 @@ export {
     menu,
     xMark,
     yugal,
-    pranjal
+    pranjal,
+    frontend,
+    backend,
+    fullStack,
+    webDesigner
 }

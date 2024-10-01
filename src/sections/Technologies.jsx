@@ -19,7 +19,7 @@ const iconVariants = (duration) => ({
 
 const Technologies = () => {
   return (
-    <div
+    <section
       id="technologies"
       className="border-t-[2px] border-slate-500 w-full flex flex-col justify-center items-center gap-10 mb-8"
     >
@@ -128,7 +128,7 @@ const Technologies = () => {
           <DiNodejs className="text-blue-500 hover:text-blue-400 transition-colors duration-200 ease-in-out text-5xl" />
         </motion.div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 

@@ -7,6 +7,7 @@ import MatterAnimation from "./components/MatterAnimation";
 import SimpleBar from "simplebar-react";
 import "simplebar-react/dist/simplebar.min.css"; // Import SimpleBar CSS for styling
 import ChatIcon from "./components/ChatIcon"; // Import the chat icon
+import Services from "./sections/Services";
 
 const App = () => {
   return (
@@ -26,6 +27,9 @@ const App = () => {
           </section>
           <section className="px-4 sm:px-8 lg:px-16">
             <Teams />
+          </section>
+          <section className="px-4 sm:px-8 lg:px-16">
+            <Services />
           </section>
         </SimpleBar>
 
