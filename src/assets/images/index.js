@@ -10,6 +10,7 @@ import frontend from "./frontend.png"
 import backend from "./backend.jpg"
 import fullStack from "./fullStack.jpg"
 import webDesigner from "./webDesigner.jpg"
+import contact from "./contact.jpg"
 
 export {
     downloadImg,
@@ -23,5 +24,6 @@ export {
     frontend,
     backend,
     fullStack,
-    webDesigner
+    webDesigner,
+    contact
 }

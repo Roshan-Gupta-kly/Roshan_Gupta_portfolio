@@ -12,12 +12,13 @@ import {
 import {
   RiJavascriptFill,
   RiNextjsFill,
+  RiReactjsFill,
   RiTailwindCssFill,
 } from "react-icons/ri";
 
 const Services = () => {
   return (
-    <section id="services" className="border-t-[2px] border-slate-500 ">
+    <section id="services" className="border-t-[2px] border-slate-500 mt-16">
       <div className="flex flex-col justify-center items-center">
         <motion.h2
           whileInView={{ opacity: 1, y: 0 }}
@@ -73,6 +74,11 @@ const Services = () => {
                   <li className="border-2 border-slate-700 p-2 rounded-xl">
                     <a href="">
                       <RiJavascriptFill className="text-5xl text-yellow-400 hover:text-yellow-500" />
+                    </a>
+                  </li>
+                  <li className="border-2 border-slate-700 p-2 rounded-xl">
+                    <a href="">
+                      <RiReactjsFill className="text-5xl text-blue-400 hover:text-blue-500" />
                     </a>
                   </li>
                 </ul>
