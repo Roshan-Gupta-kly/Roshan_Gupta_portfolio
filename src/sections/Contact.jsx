@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { MdEmail } from "react-icons/md";
 import { contact } from "../assets/images";
 import { motion } from "framer-motion";
@@ -6,8 +7,38 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
 import { RxAvatar } from "react-icons/rx";
 import { TfiEmail } from "react-icons/tfi";
+import emailjs from "emailjs-com"; // Import EmailJS
 
 const Contact = () => {
+  const [successMessage, setSuccessMessage] = useState(""); // For success message
+  const [errorMessage, setErrorMessage] = useState(""); // For error message
+
+  // EmailJS sendEmail function
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_xh9xar7", // Replace with your Service ID
+        "template_0lpy8vl", // Replace with your Template ID
+        e.target,
+        "kNjdWPXZKVSLRczTB" // Replace with your User ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setSuccessMessage("Message successfully sent!"); // Set success message
+          setErrorMessage(""); // Clear any error message
+          e.target.reset(); // Reset form
+        },
+        (error) => {
+          console.log(error.text);
+          setSuccessMessage(""); // Clear success message
+          setErrorMessage("Failed to send the message. Please try again."); // Set error message
+        }
+      );
+  };
+
   return (
     <section
       id="contact"
@@ -26,7 +57,6 @@ const Contact = () => {
         </motion.div>
         <div className="w-full rounded-lg shadow-[0px_0px_10px_rgba(100,100,100,0.4)] bg-gray-950 px-8 py-12 ">
           <div className="p-8 rounded-lg flex items-center justify-between gap-10 md:flex-nowrap flex-wrap">
-            {/* Animate the Contact Image */}
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -50 }}
@@ -41,7 +71,7 @@ const Contact = () => {
               >
                 <a
                   href="mailto:lucysigma72@gmail.com"
-                  className="text-slate-500 font-semibold  flex items-center gap-2"
+                  className="text-slate-500 font-semibold flex items-center gap-2"
                 >
                   <MdEmail className="text-2xl text-white" />
                   lucysigma72@gmail.com
@@ -82,13 +112,12 @@ const Contact = () => {
               </motion.div>
             </motion.div>
 
-            {/* Animate the Contact Form */}
             <motion.form
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 50 }}
               transition={{ duration: 1 }}
               className="flex flex-col justify-center gap-5 mt-4 md:w-1/2"
-              action="submit"
+              onSubmit={sendEmail} // Call sendEmail on form submit
             >
               {/* Full Name */}
               <div>
@@ -106,8 +135,9 @@ const Contact = () => {
                 <input
                   type="text"
                   id="fullName"
-                  name="fullName"
+                  name="from_name"
                   placeholder="Full Name"
+                  required
                   className="p-2 w-full block outline-none shadow-[0px_0px_10px_rgba(100,100,100,0.4)] rounded-md sm:text-sm bg-transparent text-white"
                 />
               </div>
@@ -154,8 +184,8 @@ const Contact = () => {
                   <input
                     type="tel"
                     id="contact"
-                    name="contact"
-                    placeholder="Contact"
+                    name="phone_no"
+                    placeholder="+977 Ne"
                     className="p-2 w-full block outline-none shadow-[0px_0px_10px_rgba(100,100,100,0.4)] rounded-md sm:text-sm bg-transparent text-white"
                   />
                 </div>
@@ -179,6 +209,7 @@ const Contact = () => {
                   name="message"
                   placeholder="Describe your message"
                   rows={8}
+                  required
                   className="p-2 w-full block outline-none shadow-[0px_0px_10px_rgba(100,100,100,0.4)] rounded-md sm:text-sm bg-transparent text-white"
                 />
               </div>
@@ -193,6 +224,12 @@ const Contact = () => {
                   <BiSend className="text-lg text-white" />
                 </span>
               </button>
+
+              {/* Success/Error Messages */}
+              {successMessage && (
+                <p className="text-blue-600">{successMessage}</p>
+              )}
+              {errorMessage && <p className="text-red-700">{errorMessage}</p>}
             </motion.form>
           </div>
         </div>
