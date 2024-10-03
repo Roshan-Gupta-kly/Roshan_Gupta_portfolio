@@ -33,21 +33,21 @@ const Footer = () => {
           <motion.a
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 80 }}
-          transition={{ duration: 1.2 }}
+          transition={{ duration: 0.9 }}
           href="https://www.instagram.com" target="_blank">
             <BsInstagram className="text-xl text-slate-500 hover:scale-110" />
           </motion.a>
           <motion.a
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 80 }}
-          transition={{ duration: 0.9 }}
+          transition={{ duration: 0.8 }}
           href="https://github.com/Roshan-Gupta-kly" target="_blank">
             <BsGithub className="text-xl text-slate-500 hover:scale-110" />
           </motion.a>
           <motion.a
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 80 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.7 }}
             href="https://www.linkedin.com/in/roshan-gupta-2817522a5/"
             target="_blank"
           >
@@ -56,7 +56,7 @@ const Footer = () => {
           <motion.a
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 80 }}
-          transition={{ duration: 0.2 }}
+          transition={{ duration: 0.6 }}
           href="https://www.twitter.com">
             <BsTwitterX
               className="text-xl text-slate-500 hover:scale-110"
