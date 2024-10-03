@@ -9,6 +9,7 @@ import "simplebar-react/dist/simplebar.min.css"; // Import SimpleBar CSS for sty
 import ChatIcon from "./components/ChatIcon"; // Import the chat icon
 import Services from "./sections/Services";
 import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
 
 const App = () => {
   return (
@@ -18,7 +19,6 @@ const App = () => {
 
       <main className="relative z-10 selection:bg-slate-300 selection:text-cyan-900 w-full max-w-[100vw] overflow-x-hidden">
         {/* Wrap sections in SimpleBar for custom scroll */}
-        <SimpleBar style={{ maxHeight: "100vh" }} className="custom-scrollbar">
           <Nav />
           <section className="px-4 sm:px-8 lg:px-16 z-0">
             <Hero />
@@ -35,7 +35,9 @@ const App = () => {
           <section className="px-4 sm:px-8 lg:px-16">
             <Contact />
           </section>
-        </SimpleBar>
+          <section className="">
+            <Footer />
+          </section>
 
         {/* Chat Icon at the bottom-right corner */}
         {/* <ChatIcon /> */}

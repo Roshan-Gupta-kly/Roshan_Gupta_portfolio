@@ -1,10 +1,11 @@
 import { MdEmail } from "react-icons/md";
 import { contact } from "../assets/images";
 import { motion } from "framer-motion";
-import { BiPhoneCall } from "react-icons/bi";
+import { BiMessage, BiPhone, BiPhoneCall, BiSend } from "react-icons/bi";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
-
+import { RxAvatar } from "react-icons/rx";
+import { TfiEmail } from "react-icons/tfi";
 
 const Contact = () => {
   return (
@@ -34,30 +35,35 @@ const Contact = () => {
             >
               <img src={contact} alt="contact" className="rounded-xl" />
               <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: -50 }}
-              transition={{ duration: 1.2 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -50 }}
+                transition={{ duration: 1.2 }}
               >
-                <a href="mailto:lucysigma72@gmail.com" className="text-slate-500 font-semibold  flex items-center gap-2">
-                <MdEmail className="text-2xl text-white" />
+                <a
+                  href="mailto:lucysigma72@gmail.com"
+                  className="text-slate-500 font-semibold  flex items-center gap-2"
+                >
+                  <MdEmail className="text-2xl text-white" />
                   lucysigma72@gmail.com
                 </a>
               </motion.div>
               <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: -50 }}
-              transition={{ duration: 1.4 }}
-              className="flex items-center gap-2 justify-start">
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -50 }}
+                transition={{ duration: 1.4 }}
+                className="flex items-center gap-2 justify-start"
+              >
                 <BiPhoneCall className="text-2xl text-white" />
                 <p className="text-slate-500 font-semibold italic">
                   +9779703880674
                 </p>
               </motion.div>
               <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: -50 }}
-              transition={{ duration: 1.6 }}
-              className="flex items-center gap-6">
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -50 }}
+                transition={{ duration: 1.6 }}
+                className="flex items-center gap-6"
+              >
                 <a
                   href="https://www.linkedin.com/in/roshan-gupta-2817522a5/"
                   target="_blank"
@@ -70,10 +76,7 @@ const Contact = () => {
                 >
                   <FaFacebook className="text-3xl text-white" />
                 </a>
-                <a
-                  href="https://github.com/Roshan-Gupta-kly"
-                  target="_blank"
-                >
+                <a href="https://github.com/Roshan-Gupta-kly" target="_blank">
                   <BsGithub className="text-3xl text-white" />
                 </a>
               </motion.div>
@@ -89,12 +92,17 @@ const Contact = () => {
             >
               {/* Full Name */}
               <div>
-                <label
-                  htmlFor="fullName"
-                  className="text-sm font-medium text-slate-200 inline-block mb-1"
-                >
-                  Full Name
-                </label>
+                <div className="flex gap-2 items-center mb-1">
+                  <span>
+                    <RxAvatar className="text-xl text-white" />
+                  </span>
+                  <label
+                    htmlFor="fullName"
+                    className="text-sm font-medium text-slate-200 inline-block mb-1"
+                  >
+                    Full Name
+                  </label>
+                </div>
                 <input
                   type="text"
                   id="fullName"
@@ -108,12 +116,17 @@ const Contact = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {/* Email */}
                 <div>
-                  <label
-                    htmlFor="email"
-                    className="text-sm font-medium text-slate-200 inline-block mb-1"
-                  >
-                    Email
-                  </label>
+                  <div className="flex gap-2 items-center mb-1">
+                    <span>
+                      <TfiEmail className="text-lg text-white" />
+                    </span>
+                    <label
+                      htmlFor="email"
+                      className="text-sm font-medium text-slate-200 inline-block mb-1"
+                    >
+                      Email
+                    </label>
+                  </div>
                   <input
                     type="email"
                     id="email"
@@ -127,12 +140,17 @@ const Contact = () => {
 
                 {/* Phone Number */}
                 <div>
-                  <label
-                    htmlFor="contact"
-                    className="text-sm font-medium text-slate-200 inline-block mb-1"
-                  >
-                    Phone No.
-                  </label>
+                  <div className="flex gap-2 items-center mb-1">
+                    <span>
+                      <BiPhone className="text-lg text-white" />
+                    </span>
+                    <label
+                      htmlFor="contact"
+                      className="text-sm font-medium text-slate-200 inline-block mb-1"
+                    >
+                      Phone No.
+                    </label>
+                  </div>
                   <input
                     type="tel"
                     id="contact"
@@ -145,15 +163,20 @@ const Contact = () => {
 
               {/* Description */}
               <div>
-                <label
-                  htmlFor="description"
-                  className="text-sm font-medium text-slate-200 inline-block mb-1"
-                >
-                  Description
-                </label>
+                <div className="flex gap-2 items-center mb-1">
+                  <span>
+                    <BiMessage className="text-lg text-white" />
+                  </span>
+                  <label
+                    htmlFor="message"
+                    className="text-sm font-medium text-slate-200 inline-block mb-1"
+                  >
+                    Message
+                  </label>
+                </div>
                 <textarea
-                  id="description"
-                  name="description"
+                  id="message"
+                  name="message"
                   placeholder="Describe your message"
                   rows={8}
                   className="p-2 w-full block outline-none shadow-[0px_0px_10px_rgba(100,100,100,0.4)] rounded-md sm:text-sm bg-transparent text-white"
@@ -163,9 +186,12 @@ const Contact = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="text-slate-300 max-w-32 py-2 rounded-md bg-transparent shadow-[0px_0px_10px_rgba(100,100,100,0.4)] hover:text-slate-300"
+                className="text-slate-300 max-w-32 py-2 rounded-md bg-transparent shadow-[0px_0px_10px_rgba(100,100,100,0.4)] hover:text-slate-300 flex items-center justify-center gap-2 group"
               >
-                Submit
+                Send
+                <span className="group-hover:translate-x-[2px] group-hover:scale-105 transition-transform ease-in-out delay-100 ">
+                  <BiSend className="text-lg text-white" />
+                </span>
               </button>
             </motion.form>
           </div>

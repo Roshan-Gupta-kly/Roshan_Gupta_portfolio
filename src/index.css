@@ -38,12 +38,3 @@
 
 }
 
-/* For WebKit browsers (Chrome, Safari, etc.) */
-.simplebar-scrollbar::before {
-  background-color: #151f34; /* Tomato color for example */
-}
-
-/* For Firefox */
-.simplebar-track {
-  scrollbar-color: #151f34 #f0f0f0; /* First is scrollbar color, second is the track color */
-}
