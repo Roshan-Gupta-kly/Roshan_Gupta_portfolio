@@ -25,7 +25,7 @@ const Teams = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 1.5 }}
-          className="shadow-[0px_0px_10px_rgba(100,100,100,0.4)] rounded-xl w-full h-full mb-14 p-16 flex flex-col justify-center items-center"
+          className="bg-gray-950 shadow-[0px_0px_10px_rgba(100,100,100,0.4)] rounded-xl w-full h-full mb-14 p-16 flex flex-col justify-center items-center"
         >
           <Splide
             options={{

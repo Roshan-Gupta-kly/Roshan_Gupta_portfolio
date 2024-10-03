@@ -45,20 +45,6 @@ export const Teammates = [
     name: "Pranjal Barnawal",
     image: pranjal,
     description:
-      "Roshan brings a perfect balance of technical expertise and collaboration to every project. . It's always a pleasure to see their innovative ideas come to life.",
-    role: "Graphics Designer",
-  },
-  {
-    name: "Yugal Neupane",
-    image: yugal,
-    description:
-      "Roshan brings a perfect balance of technical expertise and collaboration to every project. . It's always a pleasure to see their innovative ideas come to life.",
-    role: "Full Stack Developer",
-  },
-  {
-    name: "Pranjal Barnawal",
-    image: pranjal,
-    description:
       "Working with Roshan as a full-stack developer is always an inspiring experience. Their ability to tackle both frontend and backend challenges with ease makes them a truly valuable teammate.",
     role: "Graphics Designer",
   },

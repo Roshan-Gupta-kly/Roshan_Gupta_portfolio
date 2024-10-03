@@ -23,7 +23,7 @@ const Contact = () => {
             Contact
           </h2>
         </motion.div>
-        <div className="w-full rounded-lg shadow-[0px_0px_10px_rgba(100,100,100,0.4)] px-8 py-12 ">
+        <div className="w-full rounded-lg shadow-[0px_0px_10px_rgba(100,100,100,0.4)] bg-gray-950 px-8 py-12 ">
           <div className="p-8 rounded-lg flex items-center justify-between gap-10 md:flex-nowrap flex-wrap">
             {/* Animate the Contact Image */}
             <motion.div
