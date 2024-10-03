@@ -48,7 +48,7 @@ const AboutMe = ({ onClose }) => {
         variants={variants} // Apply the animation variants
       >
         <FaTimes
-          className="absolute top-4 right-5 w-8 h-8 text-slate-700 shadow-[0px_0px_10px_rgba(255,255,255,0.4)] p-1 rounded-full cursor-pointer hover:scale-105 hover:rotate-180 transition-transform duration-300"
+          className="absolute top-4 right-5 w-8 h-8 text-white shadow-[0px_0px_10px_rgba(255,255,255,0.4)] p-1 rounded-full cursor-pointer hover:scale-105 hover:rotate-180 transition-transform duration-300"
           onClick={onClose} // Trigger close action
         />
         <div className="w-full flex justify-center gap-12 p-14">

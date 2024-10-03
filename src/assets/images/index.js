@@ -11,6 +11,7 @@ import backend from "./backend.jpg"
 import fullStack from "./fullStack.jpg"
 import webDesigner from "./webDesigner.jpg"
 import contact from "./contact.jpg"
+import sandesh from "./sandesh.jpeg"
 
 export {
     downloadImg,
@@ -25,5 +26,6 @@ export {
     backend,
     fullStack,
     webDesigner,
-    contact
+    contact,
+    sandesh
 }

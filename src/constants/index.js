@@ -1,5 +1,5 @@
 import { image } from "framer-motion/client";
-import { pranjal, yugal } from "../assets/images";
+import { pranjal, sandesh, yugal } from "../assets/images";
 import { frontend, backend, fullStack, webDesigner } from "../assets/images";
 
 
@@ -47,6 +47,13 @@ export const Teammates = [
     description:
       "Working with Roshan as a full-stack developer is always an inspiring experience. Their ability to tackle both frontend and backend challenges with ease makes them a truly valuable teammate.",
     role: "Graphics Designer",
+  },
+  {
+    name: "Sandesh patel",
+    image: sandesh,
+    description:
+      "Working with Roshan as a full-stack developer is always an inspiring experience. Their ability to tackle both frontend and backend challenges with ease makes them a truly valuable teammate.",
+    role: "Full Stack Developer",
   },
 ];
 
