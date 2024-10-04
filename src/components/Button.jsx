@@ -18,7 +18,7 @@ const Button = ({ label, imgURL, download, onClick }) => {
       document.body.appendChild(link);
       link.click(); // Trigger the download
       document.body.removeChild(link); // Remove the anchor element
-    }, 500);
+    }, 100);
   };
 
   const handleClick = () => {
