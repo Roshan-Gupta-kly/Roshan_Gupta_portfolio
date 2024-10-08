@@ -29,7 +29,7 @@ const Services = () => {
           Services
         </motion.h2>
         <div className="flex justify-center items-center flex-col gap-10 p-10 my-10 bg-gray-950 shadow-[0px_0px_10px_rgba(100,100,100,0.4)] rounded-xl">
-          <div className="h-full w-full text-white flex flex-col items-center justify-center gap-6 sm:gap-8 z-10">
+          <div className="h-full w-full text-white flex flex-col items-center justify-center gap-6 sm:gap-8 z-100">
             <div className="flex justify-center items-center md:gap-20 gap-10 md:flex-nowrap flex-wrap border-b-[1px] border-slate-700 pb-10">
               <motion.div
                 whileInView={{ opacity: 1, x: 0 }}
