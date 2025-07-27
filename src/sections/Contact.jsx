@@ -185,7 +185,7 @@ const Contact = () => {
                     type="tel"
                     id="contact"
                     name="phone_no"
-                    placeholder="+977 Ne"
+                    placeholder="+977 Nep"
                     className="p-2 w-full block outline-none shadow-[0px_0px_10px_rgba(100,100,100,0.4)] rounded-md sm:text-sm bg-transparent text-white"
                   />
                 </div>
