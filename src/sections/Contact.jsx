@@ -227,7 +227,9 @@ const Contact = () => {
 
               {/* Success/Error Messages */}
               {successMessage && (
-                <p className="text-blue-600">{successMessage}</p>
+                <p className="text-transparent bg-clip-text bg-gradient-to-tr shadow-2xl  animate-pulse from-blue-400 to-red-800 font-semibold text-lg">
+                  {successMessage}
+                </p>
               )}
               {errorMessage && <p className="text-red-700">{errorMessage}</p>}
             </motion.form>
